@@ -11,6 +11,12 @@ Generate a new repository based on this one by [clicking here](https://github.co
 
 A PR will be opened in your repository a few minutes after you generate the repository, outlining the next steps. Essentially you will generate a keypair, store private key in Github and the public on AWS, provision your EC2 instance, update your domain's A record to point to it, and then update one configuration file.
 
+NOTE: The instructions at [Run a Flask app on AWS EC2](https://barnett.science/linux/aws/ansible/2020/05/28/ansible-flask.html)
+
+More info here [Failed to start Gunicorn](https://stackoverflow.com/questions/40711747/failed-to-start-gunicorn-service-unit-gunicorn-service-not-found#40715296)
+
+createa file at: `/etc/systemd/system/gunicorn.conf` but I had ot create it at `/etc/systemd/system/gunicorn.service`
+
 ## Continuous deployment
 
 Every time a push is made to the default branch `main`,
